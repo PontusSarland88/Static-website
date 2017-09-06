@@ -8,13 +8,23 @@
     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-    <nav role="full-horizontal">
-        <ul>
-            <li><a href="#">Coffe</a></li>
-            <li><a href="#">Cafes</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <header> 
+        <h1 class="centertext">Coffehouse</h1>     
+            <nav role="full-horizontal", class="centertext">
+                <ul>
+                    <li><a href="#">Coffe</a></li>
+                    <li><a href="#">Cafes</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <input type="search" placeholder="Search...">
+                    <button>&#10132</button>
+                </ul>
+            </nav>
+    </header>
+    <div id="mybackground"></div>  
+    <footer>
+        <span>Copyright 2017 Coffehouse</span>
+        <span>Follow us on facebook: <img class="small-logo" src="facebook-icon.png" alt="Logos for social media" ></span>
+    </footer>
 </body>
 </html>

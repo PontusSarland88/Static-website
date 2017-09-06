@@ -14,7 +14,13 @@ body{
     background-image: linear-gradient(to bottom, #AAA094, #efffff);
     font: 1em 'Roboto', sans-serif;
     margin: 0.5em;
+    background-repeat: no-repeat;
 }
+
+.centertext{
+    text-align: center;
+}
+
 nav[role="full-horizontal"]{
     width: 100%;
 }
@@ -24,11 +30,12 @@ nav[role="full-horizontal"] ul{
 }
 
 nav[role="full-horizontal"] ul>li{
-    padding: .25em 1em;
-    margin: 1.25em 1em;
+    padding: .1em 1em;
+    margin: 0.2em 1em 1em;
     text-transform: uppercase;
     cursor: pointer;
-    float: left;
+    display: inline-block;
+    
     position: relative;
     text-align: center;
     border-radius: 0.20em;
@@ -68,3 +75,31 @@ nav[role="full-horizontal"] ul>li:hover>a{
         margin: 0 0 .55em 0;
     }
 }
+
+#mybackground{
+    padding-left: 0;
+    background: url(Beans.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 80%;
+}
+
+  footer{
+        position: fixed;
+        
+        background-color: #A69A7A;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4%;
+        text-align: center;
+        
+    } 
+    .small-logo{
+        height: 1.8em;
+        width: 2em;
+        margin-bottom: -0.5em;
+    }
+    span{
+        padding-right: 8em;
+    }
