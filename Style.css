@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#AAA094), to(#efffff));
+    background-image: -webkit-linear-gradient(top, #AAA094, #efffff);
+    background-image: -moz-linear-gradient(top, #AAA094, #efffff);
+    background-image: linear-gradient(to bottom, #AAA094, #efffff);
+    font: 1em 'Roboto', sans-serif;
+    margin: 0.5em;
+}
+nav[role="full-horizontal"]{
+    width: 100%;
+}
+nav[role="full-horizontal"] ul{
+    width: 100%;
+    list-style: none;
+}
+
+nav[role="full-horizontal"] ul>li{
+    padding: .25em 1em;
+    margin: 1.25em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    text-align: center;
+    border-radius: 0.20em;
+}
+
+nav[role="full-horizontal"] ul>li:after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: 0;
+    border-radius: 50%;
+}    
+
+nav[role="full-horizontal"] ul>li>a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+nav[role="full-horizontal"] ul>li:hover{
+    background-color: rgba(33, 44, 55, 0.8)
+}
+    
+nav[role="full-horizontal"] ul>li:hover>a{
+    color: #fff;
+}  
+@media screen and (max-width: 44em) {
+    body{
+        margin: 1.5em 0;
+    }
+    nav[role="full-horizontal"] ul {
+        padding: 0 .5em;
+    }
+    nav[role="full-horizontal"] ul>li {
+        width: 100%;
+        padding: .45em .25em;
+        margin: 0 0 .55em 0;
+    }
+}
